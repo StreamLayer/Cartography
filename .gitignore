@@ -17,3 +17,7 @@ DerivedData
 
 Pods/
 .DS_Store
+node_modules
+.build
+*.zip
+*.lock

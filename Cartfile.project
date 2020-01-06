@@ -1,0 +1,11 @@
+Cartography-iOS:
+  project: Cartography.xcodeproj
+  sdks:
+  - iphonesimulator
+  - iphoneos
+
+Cartography-tvOS:
+  project: Cartography.xcodeproj
+  sdks:
+  - appletvos
+  - appletvsimulator
