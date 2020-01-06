@@ -1,4 +1,4 @@
-  Cartography-Package:
+Cartography-Package:
   project: Cartography.xcodeproj
   sdks:
   - iphonesimulator
