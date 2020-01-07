@@ -5,10 +5,10 @@
    objects = {
       "Cartography::Cartography" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_60";
+         buildConfigurationList = "OBJ_59";
          buildPhases = (
-            "OBJ_63",
-            "OBJ_91"
+            "OBJ_62",
+            "OBJ_90"
          );
          dependencies = (
          );
@@ -24,9 +24,9 @@
       };
       "Cartography::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_93";
+         buildConfigurationList = "OBJ_92";
          buildPhases = (
-            "OBJ_96"
+            "OBJ_95"
          );
          dependencies = (
          );
@@ -318,32 +318,32 @@
       };
       "OBJ_44" = {
          isa = "PBXFileReference";
-         path = "Carthage";
+         path = "Cartography.xcworkspace";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_45" = {
          isa = "PBXFileReference";
-         path = "Cartography.xcworkspace";
+         path = "DerivedData";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_46" = {
          isa = "PBXFileReference";
-         path = "DerivedData";
+         path = "Cartography";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_47" = {
          isa = "PBXFileReference";
-         path = "Cartography";
-         sourceTree = "SOURCE_ROOT";
+         path = "CODE_OF_CONDUCT.md";
+         sourceTree = "<group>";
       };
       "OBJ_48" = {
          isa = "PBXFileReference";
-         path = "CODE_OF_CONDUCT.md";
+         path = "report.json";
          sourceTree = "<group>";
       };
       "OBJ_49" = {
          isa = "PBXFileReference";
-         path = "report.json";
+         path = "LICENSE";
          sourceTree = "<group>";
       };
       "OBJ_5" = {
@@ -369,56 +369,59 @@
             "OBJ_54",
             "OBJ_55",
             "OBJ_56",
-            "OBJ_57",
-            "OBJ_58"
+            "OBJ_57"
          );
          path = "";
          sourceTree = "<group>";
       };
       "OBJ_50" = {
          isa = "PBXFileReference";
-         path = "LICENSE";
+         path = "bitrise.yml";
          sourceTree = "<group>";
       };
       "OBJ_51" = {
          isa = "PBXFileReference";
-         path = "bitrise.yml";
+         path = "README.md";
          sourceTree = "<group>";
       };
       "OBJ_52" = {
          isa = "PBXFileReference";
-         path = "README.md";
+         path = "Cartfile.project";
          sourceTree = "<group>";
       };
       "OBJ_53" = {
          isa = "PBXFileReference";
-         path = "Cartfile.project";
+         path = "update.sh";
          sourceTree = "<group>";
       };
       "OBJ_54" = {
          isa = "PBXFileReference";
-         path = "update.sh";
+         path = "package.json";
          sourceTree = "<group>";
       };
       "OBJ_55" = {
          isa = "PBXFileReference";
-         path = "package.json";
+         path = "Cartography.podspec";
          sourceTree = "<group>";
       };
       "OBJ_56" = {
          isa = "PBXFileReference";
-         path = "Cartography.podspec";
+         path = "Podfile";
          sourceTree = "<group>";
       };
       "OBJ_57" = {
          isa = "PBXFileReference";
-         path = "Podfile";
-         sourceTree = "<group>";
-      };
-      "OBJ_58" = {
-         isa = "PBXFileReference";
          path = "Podfile.lock";
          sourceTree = "<group>";
+      };
+      "OBJ_59" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_60",
+            "OBJ_61"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
       };
       "OBJ_6" = {
          isa = "PBXFileReference";
@@ -427,13 +430,45 @@
          sourceTree = "<group>";
       };
       "OBJ_60" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_61",
-            "OBJ_62"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Cartography.xcodeproj/Cartography_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Cartography";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Cartography";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
       };
       "OBJ_61" = {
          isa = "XCBuildConfiguration";
@@ -474,52 +509,12 @@
             TVOS_DEPLOYMENT_TARGET = "9.0";
             WATCHOS_DEPLOYMENT_TARGET = "2.0";
          };
-         name = "Debug";
-      };
-      "OBJ_62" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Cartography.xcodeproj/Cartography_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Cartography";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "Cartography";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
          name = "Release";
       };
-      "OBJ_63" = {
+      "OBJ_62" = {
          isa = "PBXSourcesBuildPhase";
          files = (
+            "OBJ_63",
             "OBJ_64",
             "OBJ_65",
             "OBJ_66",
@@ -545,33 +540,36 @@
             "OBJ_86",
             "OBJ_87",
             "OBJ_88",
-            "OBJ_89",
-            "OBJ_90"
+            "OBJ_89"
          );
       };
-      "OBJ_64" = {
+      "OBJ_63" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_11";
       };
-      "OBJ_65" = {
+      "OBJ_64" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_12";
       };
-      "OBJ_66" = {
+      "OBJ_65" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_13";
       };
-      "OBJ_67" = {
+      "OBJ_66" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_14";
       };
-      "OBJ_68" = {
+      "OBJ_67" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_15";
       };
-      "OBJ_69" = {
+      "OBJ_68" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_16";
+      };
+      "OBJ_69" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_17";
       };
       "OBJ_7" = {
          isa = "PBXGroup";
@@ -584,43 +582,43 @@
       };
       "OBJ_70" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_17";
+         fileRef = "OBJ_18";
       };
       "OBJ_71" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_18";
+         fileRef = "OBJ_19";
       };
       "OBJ_72" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_19";
+         fileRef = "OBJ_20";
       };
       "OBJ_73" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_20";
+         fileRef = "OBJ_21";
       };
       "OBJ_74" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_21";
+         fileRef = "OBJ_22";
       };
       "OBJ_75" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_22";
+         fileRef = "OBJ_23";
       };
       "OBJ_76" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_23";
+         fileRef = "OBJ_24";
       };
       "OBJ_77" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_24";
+         fileRef = "OBJ_25";
       };
       "OBJ_78" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_25";
+         fileRef = "OBJ_26";
       };
       "OBJ_79" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_26";
+         fileRef = "OBJ_27";
       };
       "OBJ_8" = {
          isa = "PBXGroup";
@@ -661,68 +659,64 @@
       };
       "OBJ_80" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_27";
+         fileRef = "OBJ_28";
       };
       "OBJ_81" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_28";
+         fileRef = "OBJ_29";
       };
       "OBJ_82" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_29";
+         fileRef = "OBJ_30";
       };
       "OBJ_83" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_30";
+         fileRef = "OBJ_31";
       };
       "OBJ_84" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_31";
+         fileRef = "OBJ_32";
       };
       "OBJ_85" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_32";
+         fileRef = "OBJ_33";
       };
       "OBJ_86" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_33";
+         fileRef = "OBJ_34";
       };
       "OBJ_87" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_34";
+         fileRef = "OBJ_35";
       };
       "OBJ_88" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_35";
+         fileRef = "OBJ_36";
       };
       "OBJ_89" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_36";
+         fileRef = "OBJ_37";
       };
       "OBJ_9" = {
          isa = "PBXFileReference";
-         path = "Cartography.h";
+         path = "SLR_Cartography.h";
          sourceTree = "<group>";
       };
       "OBJ_90" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_37";
-      };
-      "OBJ_91" = {
          isa = "PBXFrameworksBuildPhase";
          files = (
          );
       };
-      "OBJ_93" = {
+      "OBJ_92" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_94",
-            "OBJ_95"
+            "OBJ_93",
+            "OBJ_94"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_94" = {
+      "OBJ_93" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             LD = "/usr/bin/true";
@@ -742,7 +736,7 @@
          };
          name = "Debug";
       };
-      "OBJ_95" = {
+      "OBJ_94" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             LD = "/usr/bin/true";
@@ -762,13 +756,13 @@
          };
          name = "Release";
       };
-      "OBJ_96" = {
+      "OBJ_95" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_97"
+            "OBJ_96"
          );
       };
-      "OBJ_97" = {
+      "OBJ_96" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_6";
       };
